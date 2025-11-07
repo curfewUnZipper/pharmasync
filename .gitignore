@@ -64,6 +64,7 @@ Thumbs.db
 .env.*
 *.env
 config.py
+.toml
 # ===============================
 # Jupyter / Notebooks
 # ===============================
