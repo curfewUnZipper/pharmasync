@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
-import config  # if using config.py
+import os
+from dotenv import load_dotenv
 
-client = MongoClient(config.MONGO_URI)
-db = client[config.DB_NAME]
+load_dotenv()
+
+client = MongoClient(os.getenv("MONGO_URI"))
+db = client(os.getenv("DB_NAME"))
 
 app = Flask(__name__)
 
