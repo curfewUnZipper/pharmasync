@@ -46,7 +46,7 @@ build/
 dist/
 *.egg-info/
 .eggs/
-
+backend/
 # IDE / editor folders
 .vscode/
 .idea/

@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE = "http://localhost:5000"
+API_BASE = st.secrets["backend"]["uri"]
 
 st.set_page_config(page_title="Pharmasync", layout="wide")
 st.title("💊 Pharmasync Portal")
